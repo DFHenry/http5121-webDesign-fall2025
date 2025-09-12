@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html> lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>HTML Lists</title>
+    </head>
+
+    <body>
+        <h1>HTML lists</h1>
+        <p>There are two tyspes of list in HTML: ul (unordered list) and ol (ordered list).</p>
+        <p>My favourite fruit</p>
+        <ul>
+            <li>peaches</li>
+            <li>oranges</li>
+                <ul> <!--this is the proper way to put lists inside of lists, including the indentation-->
+                    <li>blood</li>
+                    <li>Cara Cara</li>
+                </ul>
+            <li>apples</li>
+        </ul>
+        <ol type="i"><!-- type is for the look of the bullet points-->
+            <li>cars</li>
+            <li>books</li>
+            <li>action figures</li>
+
+    </body>
+</html>

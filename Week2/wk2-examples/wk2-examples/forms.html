@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Forms</title>
+  </head>
+  <body>
+    <h1>HTML Forms</h1>
+    <!-- All stuff that belongs to forms - including submit buttons - go inside a FORM element. -->
+    <!-- 
+      There is a method attribute (GET by default). This sets how form
+      data will be submitted.
+      
+      - "get": GET forms (the default if the method attribute is not set) submit the data 
+               via the URL. This is usually used for simple search
+               forms where it doesn't matter if the data is visible in the URL. Searches are
+               not secure data so this doesn't matter. It's also useful to be able to bookmark
+               a search page. Since GET forms pass data via the URL, there is a character limit on
+               GET form data.
+      - "post": POST forms do NOT submit via the URL, so this is inherently more secure (i.e. the
+                data is not immediately exposed). Most forms should use POST as the submission
+                method. Wherever there is more sensitive data, use POST (e.g. a login form or 
+                checkout form).
+    -->
+    <!--
+      There is an action attribute. This value is the destination (URI/URL) where the form data
+      will be submitted to (e.g. action="confirmation.php"). As we're not doing any server-side form processing in this class, you
+      can omit this attribute for this class, but it's important to know about this attribute.
+    -->
+    <h2>Search form example</h2>
+      <form method="get">
+        <label for="query">Search:</label>
+        <input type="text" id="query" name="q" placeholder="enter text here"> <!--query is for, name is for-->
+        <button type="submit">Search Now</button>
+      </form>
+
+    <h2>Login form example</h2>
+      <form method="post">
+        <div>
+          <label for="u">Username</label>
+          <input type="text" id="u" name="u" placeholder="Username">
+          <input type="password" id="pw" name="pw" placeholder="">
+        </div>
+        <button type="submit">Log In</button>
+      </form>
+
+    <h2>Random form example</h2>
+    <p>The following is just a form used to test out a few form fields.</p>
+    <form method="post">
+      <div>
+        <label for="phone">Your Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder=""555-555-5555">
+      </div>
+      <div>
+        <lable for="email">Your Email</lable>
+        <input type="email" is="email" name="email" placeholder="Your email here">
+      </div>
+      <div>
+        <label for="household">Number of people in your household</label>
+        <input type="number" id="household" name="household" placeholder="1" value="1">
+      </div>
+      <div>
+        <label for="test">Formatted number which is not a regular number or phone number:</label>
+        <input for="text" id="test" name="test" inputmode="numeric" placeholder="012345">
+      </div>
+      <div>
+        <input for="hidden" name="hiddendata" value="This Is Hidden Data">
+      </div>
+      <div>
+        <input type="checkbox" id="checkbox" name="subscribe" value="subscribed">
+        <label for="subscribe">Subscribe to our newsletter</label>
+      </div>
+      <fieldset> <!-- A fieldset is used for grouping related fileds with a larger form. -->
+        <legend>Identify your age group:</legend> <!-- legend is like the "label" for a fieldset -->
+        <!-- for radio button groups or checkbox lists, give the radio buttons/checkboxes the same name
+         value so that they won't work as a group (like one field)-->
+        <input type="radio" id="twenties" name="age" value="20s" checked>
+        <label for="twenties">20-29</label>
+        <input type="radio" id="thirties" name="age" value="30s">
+        <label for="thirties">30-39</label>
+        <input type="radio" id="fourties" name="age" value="30s">
+        <label for="fourties">40+</label>
+      </fieldset>
+      <div>
+        <label for="reason">Reason for enquiry:</label>
+        <select id="reason" name="reason"><!--the name goes on the select element bvecause the dropdown
+          (select) is in the field-->
+          <option disabled selected value="">Choose an Option</option>
+          <option value="sales">Sales Enquiries</option>
+          <optgroup label="Other">
+            <option value="legal">Legal Enquiries</option>
+            <option value="general">General Enquiries</option>
+            <option value="media">Media Enquiries</option>
+          </optgroup>
+          
+        </select>
+      </div>
+
+      <div>
+        <label for="message">Your Message</label>
+      </div>
+      <textarea id="message" name="message" cols="30" rows="8" placeholder="Your Message here"></textarea>
+      <button type="submit">Submit</button>
+
+    </form>
+  </body>
+</html>
