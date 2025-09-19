@@ -1,0 +1,141 @@
+/*Styles*/
+
+/*Basics*/
+body
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: normal;
+    background-color: lightyellow;
+}
+
+h1
+{
+    color: white;
+    text-shadow: 2px 1px 5px black;
+    background-color: darkred;
+    padding: 5px;
+    border: 7px outset #530000;
+}
+
+h2
+{
+    width: 20%;
+    text-indent: 4px;
+    color: white;
+    text-shadow: 0px 0px 5px black;
+    background-color: darkred;
+    padding: 4px;
+    border: 1px solid black;
+}
+
+p
+{
+    width: 70%;
+    margin-left: 20px;
+}
+
+/*lists*/
+ul 
+{
+    width: 30%;
+    background-color: #f9ecb9;
+    padding: 1px 0px 0px 2px;
+    margin: 3px 3px 3px 39px;
+}
+
+li
+{
+    padding-left: 2px;
+    margin-left: 1em;
+}
+
+li:nth-child(2)
+{
+    background-color: #f2de8e;
+}
+li:last-child
+{
+    padding-bottom: 2px;
+}
+
+/*text formatting*/
+em
+{
+    color: #ce0202;
+}
+
+strong
+{
+    color: #ce0202;
+}
+
+/*Link Styling*/
+a:link
+{
+    color: #ce0202;
+}
+a:hover
+{
+    color: darkblue;
+}
+a:visited
+{
+    color: darkred;
+}
+a:active
+{
+    color: orange;
+}
+
+/*Forms*/
+.signup
+{
+    display: inline-block;
+    font-size: 1.5em;
+    vertical-align: middle;
+    background-color: #f9ecb9;
+    border: 0.5px dashed black;
+    border-radius: 1em;
+    padding: 5px 10px;
+    margin-left: 39px;
+}
+
+button
+{
+    display: inline-block;
+    font-size: 12px;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    background-color: darkred;
+    padding: 4px;
+    border: 1px solid black;
+    border-radius: 1em;
+    box-shadow: 0px 0px 5px #530000 inset;
+}
+button:hover
+{
+    background-color: darkblue;
+}
+button:active
+{
+    background-color: orange;
+}
+
+/*Layout*/
+
+#code
+{
+    background-color: gainsboro;
+    padding: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 3em;
+}
+
+#email
+{
+    height: 1.5em;
+    vertical-align: middle;
+    padding: 2.5px;
+}
