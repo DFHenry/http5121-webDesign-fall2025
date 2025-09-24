@@ -2,12 +2,17 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <style ="style.css"></style>
+        <link rel="stylesheet" href="./style.css">
         <title>David Henry - Assignment 1</title>
     </head>
 
     <body>
-        <header>
+        <header id="header">
+            <!-- <img src="placeholder.jpg" width="80px"> -->
+            <div class="in-line">
+                <h2>Dave's LARP Blog</h2>
+                <p>LARPing Reviews, Discussions & Hot-Takes</p>
+            </div>
 
         </header>
 
@@ -37,17 +42,41 @@
                     with the treacherous crew member.
                 </p>
                 <p>
-                    The event was filled with great costumes and props, great moments of roleplay, 
+                    The event was filled with great costumes and props, great moments of roleplay, and things to do. The  event
+                    did feel stalled at times, and while the event ended early due to issues with the venue owners, I think this 
+                    as a boon for the event as a whole. The character I played was a doctor and while I was able to do things
+                    like treat injuries, there wasn't a lot to do between those times.
+                </p>
+                <p>
+                    Overall, for a first event of a LARP finding its footing, Empire 6 is looking to be a great LARP that is able
+                    to stand out from its competitors across Southern Ontario. It has ambitions to have a completely indoor venue
+                    of its own in the future in a more centralized location in the GTA making it a great option for those who can't 
+                    travel far from the city. Despite the crisis in their fictional empire, Empire 6's future looks bright.
                 </p>
 
             </article>
 
             <aside>
-                
+                <h3>Subscribe To My Newsletter!</h3>
+                <div>
+                    <label for="email">Your Email: </label><input type="email" is="email" name="news-email" placeholder="eg: name@email.com">   
+                </div>
             </aside>
             
             <section>
-
+                <p>Let us know what you think about this artice!</p>
+                <div>
+                    <label for="u">Your Name:</label>
+                    <input type="text" id="u" name="u" placeholder="Name">
+                    
+                <div>
+                    <label for="email">Your Email: </label><input type="email" is="email" name="comment-email" placeholder="eg: name@email.com">
+                </div> 
+                
+                <textarea id="message" name="message" cols="30" rows="8" placeholder="Write your comment here"></textarea>
+                <div>
+                    <button type="submit">Submit</button>
+                </div>
             </section>
         </main>
 

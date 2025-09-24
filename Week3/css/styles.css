@@ -132,7 +132,9 @@ a.button
 {
     background-color: orange;
     color: black;
-    /*4 value padding: <padding-top> <padding-right <padding-bottom> <padding-left>
+
+    /*for padding
+       4 value padding: <padding-top> <padding-right <padding-bottom> <padding-left>
        2 value padding: <padding-top-and-bottom> <padding-Left-and-Right>
        1 value padding: <value on all sides>
     */
@@ -140,7 +142,7 @@ a.button
     padding: 0.5em 0.8em;
     font-size: 0.5em;
 
-    /*
+    /* for borders
         4 value border radius: <border top> <border right> <border bottom><border left>
         2 value border radius: <border top-left and Bottom right> <border top right and bottom left>
     */
